@@ -18,11 +18,19 @@ h1 {
   font-size: 36px;
   margin-bottom: 0;
 }
+
 main {
   padding-left: 15px;
   padding-right: 15px;
 }
-main > h2 {
+
+main>h2 {
   text-align: center;
   font-size: 25px;
+}
+
+.clock-display {
+  text-align: right;
+  padding-left: 15px;
+  padding-right: 15px;
 }
