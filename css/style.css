@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -7,17 +9,17 @@ body {
   line-height: 1.3;
 
   background-color: #f9f9f9;
-  color:white;
-  
-   background: radial-gradient(ellipse 120% 80% at 70% 20%, rgba(255, 20, 147, 0.15), transparent 50%),
-          radial-gradient(ellipse 100% 60% at 30% 10%, rgba(0, 255, 255, 0.12), transparent 60%),
-          radial-gradient(ellipse 90% 70% at 50% 0%, rgba(138, 43, 226, 0.18), transparent 65%),
-          radial-gradient(ellipse 110% 50% at 80% 30%, rgba(255, 215, 0, 0.08), transparent 40%),
-          #000000;
-  
-   min-height: 100vh;
-   margin: 0;
-   padding: 0;
+  color: white;
+
+  background: radial-gradient(ellipse 120% 80% at 70% 20%, rgba(255, 20, 147, 0.15), transparent 50%),
+    radial-gradient(ellipse 100% 60% at 30% 10%, rgba(0, 255, 255, 0.12), transparent 60%),
+    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(138, 43, 226, 0.18), transparent 65%),
+    radial-gradient(ellipse 110% 50% at 80% 30%, rgba(255, 215, 0, 0.08), transparent 40%),
+    #000000;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -27,14 +29,18 @@ h1 {
   margin: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 main {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
 }
 
-.container  {
-    max-width: 980px;
+.container {
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -47,4 +53,34 @@ main>h2 {
   text-align: right;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* .fadeIn {
+  opacity: 0;
+}
+
+.fadeIn.trig {
+  animation: fadeIn 1s normal forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
+.trig-block {
+  display: block !important;
+}
+
+.enable-trig {
+  opacity: 0;
+}
+
+.enable-trig.trig {
+  opacity: 1;
 }
